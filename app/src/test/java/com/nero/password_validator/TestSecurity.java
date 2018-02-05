@@ -4,14 +4,14 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-}
-public class TestSafety {
+
+public class TestSecurity {
     private static String password="password";
     private static String moreThan8="Soccer4ever";
     private static String space="hello world";
-    private static String tooShort="hey"
+    private static String tooShort="hey";
 
-    static Validator Validate0;
+    private static Validator Validate0;
 
     @BeforeClass
     public static void init(){
@@ -28,13 +28,13 @@ public class TestSafety {
         assertEquals(Validate0.securityCheck(space),2);
         assertEquals(Validate0.securityCheck(moreThan8),3);
     }
-    /*
+
     @Test
     public void isNotLongEnough(){
         assertEquals(Validate0.securityCheck(tooShort),2);
         assertEquals(Validate0.securityCheck(moreThan8),3);
     }
-    */
+
 
 
 }

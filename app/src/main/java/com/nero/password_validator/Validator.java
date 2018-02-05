@@ -11,7 +11,7 @@ public class Validator extends AppCompatActivity {
 
     private int counter = 0;
 
-    public int securityCheck(String s) {*
+    public int securityCheck(String s) {
         counter=0;
         if (s.equals("password")) {
             counter += 1;
@@ -19,9 +19,9 @@ public class Validator extends AppCompatActivity {
         if (s.length() >= 8) {
             counter += 1;
         }
-        //if (!s.contains(" ")) {
-        //  counter += 1;
-        //}
+        if (!s.contains(" ")) {
+          counter += 1;
+        }
         return (counter);
     }
 
