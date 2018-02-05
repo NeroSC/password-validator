@@ -11,6 +11,7 @@ public class TestSecurity {
     private static String space="hello world";
     private static String tooShort="hey";
 
+    
     private static Validator Validate0;
 
     @BeforeClass
