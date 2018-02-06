@@ -46,7 +46,7 @@ public class Validator extends AppCompatActivity {
             }
         }
         //if the string is not only in Uppercases it passes the rule.
-        if (countUpperCase!=s.length() && countUpperCase!=0){
+        if (countUpperCase!=s.length() && countUpperCase!=0 && countUpperCase+countDigit!=s.length()){
             counter+=1;
         }
         // if the string contains at least 1 digit, it passes the rule.

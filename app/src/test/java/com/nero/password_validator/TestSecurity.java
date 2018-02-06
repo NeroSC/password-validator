@@ -11,6 +11,7 @@ public class TestSecurity {
     private static String space="hello world";
     private static String tooShort="hey";
     private static String notEnoughDigit="helloamerica";
+    private static String onlyUpper="SOCCER4EVER";
 
 
     private static Validator Validate0;
@@ -28,6 +29,10 @@ public class TestSecurity {
         assertEquals(2,Validate0.securityCheck(space));
     }
 
+    @Test
+    public void noLowerCase(){
+        assertEquals(4,Validate0.securityCheck(onlyUpper));
+    }
     @Test
     public void isNotLongEnough(){
         assertEquals(2,Validate0.securityCheck(tooShort));
