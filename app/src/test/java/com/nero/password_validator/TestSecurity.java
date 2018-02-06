@@ -11,7 +11,7 @@ public class TestSecurity {
     private static String space="hello world";
     private static String tooShort="hey";
 
-    
+
     private static Validator Validate0;
 
     @BeforeClass
@@ -29,13 +29,13 @@ public class TestSecurity {
         assertEquals(Validate0.securityCheck(space),2);
         assertEquals(Validate0.securityCheck(moreThan8),3);
     }
-
+    /*
     @Test
     public void isNotLongEnough(){
         assertEquals(Validate0.securityCheck(tooShort),2);
         assertEquals(Validate0.securityCheck(moreThan8),3);
     }
-
+    */
 
 
 }

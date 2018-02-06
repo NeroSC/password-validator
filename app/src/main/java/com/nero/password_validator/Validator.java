@@ -19,9 +19,11 @@ public class Validator extends AppCompatActivity {
         if (s.length() >= 8) {
             counter += 1;
         }
+        /*
         if (!s.contains(" ")) {
           counter += 1;
         }
+        */
         return (counter);
     }
 
