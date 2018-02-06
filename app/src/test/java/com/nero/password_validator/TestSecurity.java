@@ -36,6 +36,7 @@ public class TestSecurity {
     public void notEnoughDigit(){
         assertEquals(3,Validate0.securityCheck(notEnoughDigit));
     }
+
     @Test
     public void passesAllTests(){
         assertEquals(5,Validate0.securityCheck(moreThan8));

@@ -60,6 +60,7 @@ public class Validator extends AppCompatActivity {
         return (counter);
     }
 
+
     public void setPassword(View view) {
         EditText editText = (EditText) findViewById(R.id.editText);
         String pass = editText.getText().toString();
