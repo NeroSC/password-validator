@@ -9,6 +9,12 @@ import android.widget.TextView;
 
 public class Validator extends AppCompatActivity {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_validator);
+    }
+
     private int counter = 0;
     private int minDigit=1;
     private int countDigit=0;
@@ -53,14 +59,20 @@ public class Validator extends AppCompatActivity {
 
         return (counter);
     }
-    /*
+
     public void setPassword(View view) {
         EditText editText = (EditText) findViewById(R.id.editText);
-        String message = editText.getText().toString();
-        if (securityCheck(message)==5) {
-            TextView textView = findViewById(R.id.textView);
+        String pass = editText.getText().toString();
+        if (securityCheck(pass)==5) {
+            String message = "Your password is safe !";
+            TextView textView = findViewById(R.id.feedback);
             textView.setText(message);
         }
+        else{
+            String message2 = "Your password is not safe! It must contain at least : \n" +  "1 capitalized letter, 8 characters , 1 digit, not contain any space and can't be the word 'password' ";
+            TextView textView = findViewById(R.id.feedback);
+            textView.setText(message2);
+        }
     }
-    */
+
 }
