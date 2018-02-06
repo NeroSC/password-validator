@@ -10,6 +10,7 @@ public class TestSecurity {
     private static String moreThan8="Soccer4ever";
     private static String space="hello world";
     private static String tooShort="hey";
+    private static String notEnoughDigit="helloamerica";
 
 
     private static Validator Validate0;
@@ -20,22 +21,24 @@ public class TestSecurity {
     }
     @Test
     public void isPassword(){
-        assertEquals(Validate0.securityCheck(password),1);
-        assertEquals(Validate0.securityCheck(moreThan8),3);
-
+        assertEquals(2,Validate0.securityCheck(password));
     }
     @Test
     public void containSpaces(){
-        assertEquals(Validate0.securityCheck(space),2);
-        assertEquals(Validate0.securityCheck(moreThan8),3);
+        assertEquals(2,Validate0.securityCheck(space));
     }
-    /*
+
     @Test
     public void isNotLongEnough(){
-        assertEquals(Validate0.securityCheck(tooShort),2);
-        assertEquals(Validate0.securityCheck(moreThan8),3);
+        assertEquals(2,Validate0.securityCheck(tooShort));
     }
-    */
-
+    @Test
+    public void notEnoughDigit(){
+        assertEquals(3,Validate0.securityCheck(notEnoughDigit));
+    }
+    @Test
+    public void passesAllTests(){
+        assertEquals(5,Validate0.securityCheck(moreThan8));
+    }
 
 }
