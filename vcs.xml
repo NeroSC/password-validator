@@ -10,6 +10,10 @@
           <option name="url" value="https://github.com/NeroSC/password-validator.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/NeroSC/A4csci3130.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\coren\Documents\Dalhousie\WINTER term\CSCI 3130\passwordvalidator" />
